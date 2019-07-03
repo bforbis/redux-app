@@ -1,10 +1,11 @@
 import { Action } from "redux";
 import { ADD_ARTICLE } from "../constants";
+import { Article } from "../models";
 
 export interface TodoAction extends Action {
-  payload: any;
+  payload: Article;
 }
 
-export function addArticle(payload: Record<string, any>): TodoAction {
+export function addArticle(payload: Article): TodoAction {
   return { type: ADD_ARTICLE, payload };
 }

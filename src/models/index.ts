@@ -1,6 +1,6 @@
 export interface Article {
   title: string;
-  id: number;
+  id: string;
 }
 
 export interface ReduxState {
